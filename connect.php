@@ -1,10 +1,5 @@
 <?php
-//if(!isset($_COOKIE["PHPSESSID"])){session_start();}
 ini_set('session.gc_maxlifetime', 3600);
-ini_set('session.cookie_lifetime', 0);
-session_set_cookie_params(0);
-
-//if (isset($_REQUEST[session_name()])) {session_start();}
 session_start();
 $_SESSION['SESS'] = session_id();
 $SESSID = $_SESSION['SESS'];
